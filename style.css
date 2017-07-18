@@ -5,8 +5,7 @@ html {
 .container {
   width: 960px;
   margin: auto;
- background: #f0f0f0;
-
+  background: #f0f0f0;
 }
 
 header {
@@ -25,19 +24,17 @@ header>h1 {
 }
 
 h2 {
-font-family: 'Permanent Marker', cursive;
-color: #00802b;
+  font-family: 'Permanent Marker', cursive;
+  color: #00802b;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
-
 }
 
 #fish-image {
   margin: auto;
   display: block;
-
 }
 
 section {
