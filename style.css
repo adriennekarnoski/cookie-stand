@@ -11,6 +11,10 @@ html {
 
 header {
   height: 200px;
+  text-align: center;
+  line-height: 30%;
+  padding-top: 50px;
+  color: #00802b;
 }
 
 header>h1 {
@@ -18,4 +22,30 @@ header>h1 {
   font-family: 'Permanent Marker', cursive;
   text-transform: uppercase;
   font-size: 72px;
+}
+
+h2 {
+font-family: 'Permanent Marker', cursive;
+color: #00802b;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+#fish-image {
+  margin: auto;
+  display: block;
+
+}
+
+section {
+  width: 75%;
+  margin: auto;
+}
+
+li {
+  font-family: 'Bitter', serif;
+  color: blue;
 }
