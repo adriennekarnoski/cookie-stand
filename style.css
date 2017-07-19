@@ -2,6 +2,21 @@ html {
   background-image: url('pine.jpg');
 }
 
+table {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border: 1px black solid;
+}
+td {
+
+  border-left: 1px solid black;
+}
+
+th, td {
+  width: 250px;
+margin-bottom: 20px;
+}
 .container {
   width: 960px;
   margin: auto;
