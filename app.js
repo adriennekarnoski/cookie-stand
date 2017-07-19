@@ -15,7 +15,6 @@ function CookieStore(storeName, minCustomers, maxCustomers, averageCookies) {
       this.hourlyCookies.push(Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1)) + this.minCustomers);
       console.log('customers per hour calculation');
     }
-
   };
   this.cookiesSoldEachHour = [];
   this.calcCookiesSoldEachHour = function() {
@@ -26,10 +25,8 @@ function CookieStore(storeName, minCustomers, maxCustomers, averageCookies) {
     }
   };
   this.totalCookiesPerDay = 0;
-
-this.calcCookiesSoldEachHour();
+  this.calcCookiesSoldEachHour();
   salmonCookieStores.push(this);
-
 
 };
 
