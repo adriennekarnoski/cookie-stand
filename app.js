@@ -25,7 +25,7 @@ function CookieStore(storeName, minCustomers, maxCustomers, averageCookies) {
     }
   };
   this.totalCookiesPerDay = 0;
-
+this.calcCookiesSoldEachHour();
   salmonCookieStores.push(this);
 
 
