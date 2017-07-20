@@ -3,24 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Salmon Cookies | Sales</title>
-    <link href="style.css" rel="stlyesheet">
+    <link href="sales-style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Salmon Cookie Sales</h1>
-    <h2>1st and Pike</h2>
-    <ul id="pike"></ul>
+    <form id="new-store-form">
+<fieldset>
+  <legend>Submit New Salmon Cookie Location</legend>
 
-    <h2>SeaTac Airport</h2>
-    <ul id="seatac-airport"></ul>
+  <span class="input-span">
+  <label for="submitStoreLocation">Location</label>
+  <input name="submitStoreLocation" type="text" size="50" />
+</span>
 
-    <h2>Seattle Center</h2>
-    <ul id="seattle-center"></ul>
+<span class="input-span">
+  <label for="submitMinCustomers">Minimum Customers</label>
+  <input name="submitMinCustomers" type="text" size="50" />
+</span>
+<span class="input-span">
+  <label for="submitMaxCustomers">Maximum Customers</label>
+  <input name="submitMaxCustomers" type="text" size="50" />
+</span>
 
-    <h2>Capitol Hill</h2>
-    <ul id="capitol-hill"></ul>
+<span class="input-span">
+  <label for="submitAverageCookies">Average Cookies Per Customers</label>
+  <input name="submitAverageCookies" type="text" size="50" />
+</span>
 
-    <h2>Alki</h2>
-    <ul id="alki"></ul>
+  <button type="submit">Create a new cookie store</button>
+</fieldset>
+    </form>
+
+    <table id="table"></table>
+
+
   </body>
   <script src="app.js"></script>
 </html>

@@ -1,0 +1,27 @@
+form {
+  width: 400px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.input-span {
+width: 200px;
+  display: block;
+}
+
+button {
+  margin: 5px;
+  height: 35px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+}
