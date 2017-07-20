@@ -87,14 +87,15 @@ function handleNewCookieStoreLocation(event) {
   event.preventDefault();
 
   var submitStoreLocation = event.target.submitStoreLocation.value;
-  var submitMinCustomers = event.target.submitMinCustomers.value;
-  var submitMaxCustomers = event.target.submitMaxCustomers.value;
-  var submitAverageCookies = event.target.submitAverageCookies.value;
+  var submitMinCustomers = parseInt(event.target.submitMinCustomers.value);
+  var submitMaxCustomers = parseInt(event.target.submitMaxCustomers.value);
+  var submitAverageCookies = parseInt(event.target.submitAverageCookies.value);
 
   var newCookieStoreLocation = new CookieStore(submitStoreLocation, submitMinCustomers, submitMaxCustomers, submitAverageCookies);
 
   salmonCookieStores.push(newCookieStoreLocation);
   //storeRows();
+  newCookieStoreLocation.render();
 };
   //makeHeaderRow();
   storeRows();
