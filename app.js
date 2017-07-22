@@ -91,9 +91,7 @@ function makeFooterRow() {
   trEl.appendChild(tdEl);
 
   //loop through each store for each hour open
-var allTotals = 0;
-
-
+  var allTotals = 0;
     for (var i = 0; i < timeOfDay.length; i++) {
       var tdEl = document.createElement('td');
       var hourlyTotal = 0;
@@ -101,13 +99,10 @@ var allTotals = 0;
       for (var z = 0; z < salmonCookieStores.length; z++) {
         hourlyTotal += salmonCookieStores[z].cookiesSoldEachHour[i];
         console.log('z is = ' + salmonCookieStores[z]);
-
         allTotals += salmonCookieStores[z].cookiesSoldEachHour[i];
         }
-
         tdEl.textContent = hourlyTotal;
         trEl.appendChild(tdEl);
-
       }
 
       tdEl = document.createElement('td');
